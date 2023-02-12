@@ -42,7 +42,7 @@ export default function AddClientModal() {
       >
         <div className="d-flex align-items-center">
           <FaUser className="icon" />
-          <div>Add Client</div>
+          <div>Add A New Company</div>
         </div>
       </button>
 
@@ -68,7 +68,7 @@ export default function AddClientModal() {
             <div className="modal-body">
               <form onSubmit={onSubmit}>
                 <div className="mb-3">
-                  <label className="form-label">Name</label>
+                  <label className="form-label">Company Name</label>
                   <input
                     type="text"
                     className="form-control"
@@ -78,9 +78,9 @@ export default function AddClientModal() {
                   />
                 </div>
                 <div className="mb-3">
-                  <label className="form-label">Email</label>
+                  <label className="form-label">Location</label>
                   <input
-                    type="email"
+                    type="text"
                     className="form-control"
                     id="email"
                     value={email}
@@ -88,7 +88,7 @@ export default function AddClientModal() {
                   />
                 </div>
                 <div className="mb-3">
-                  <label className="form-label">Phone</label>
+                  <label className="form-label">Category</label>
                   <input
                     type="text"
                     className="form-control"

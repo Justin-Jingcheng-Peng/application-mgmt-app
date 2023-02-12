@@ -55,7 +55,7 @@ export default function AddProjectModal() {
           >
             <div className="d-flex align-items-center">
               <FaList className="icon" />
-              <div>New Project</div>
+              <div>New Application</div>
             </div>
           </button>
 
@@ -69,7 +69,7 @@ export default function AddProjectModal() {
               <div className="modal-content">
                 <div className="modal-header">
                   <h5 className="modal-title" id="addProjectModalLabel">
-                    New Project
+                    New Application
                   </h5>
                   <button
                     type="button"
@@ -81,7 +81,7 @@ export default function AddProjectModal() {
                 <div className="modal-body">
                   <form onSubmit={onSubmit}>
                     <div className="mb-3">
-                      <label className="form-label">Name</label>
+                      <label className="form-label">Role Name</label>
                       <input
                         type="text"
                         className="form-control"
@@ -108,13 +108,15 @@ export default function AddProjectModal() {
                         onChange={(e) => setStatus(e.target.value)}
                       >
                         <option value="new">Not Started</option>
-                        <option value="progress">In Progress</option>
-                        <option value="completed">Completed</option>
+                        <option value="progress">
+                          Application In Progress
+                        </option>
+                        <option value="completed">Waiting For Result</option>
                       </select>
                     </div>
 
                     <div className="mb-3">
-                      <label className="form-label">Client</label>
+                      <label className="form-label">Company</label>
                       <select
                         id="clientId"
                         className="form-select"
