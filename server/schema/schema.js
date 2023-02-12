@@ -11,16 +11,6 @@ const {
   GraphQLEnumType,
 } = require("graphql");
 
-// Client Type
-const ClientType = new GraphQLObjectType({
-  name: "Client",
-  fields: () => ({
-    id: { type: GraphQLID },
-    name: { type: GraphQLString },
-    email: { type: GraphQLString },
-    phone: { type: GraphQLString },
-  }),
-});
 // Project Type
 const ProjectType = new GraphQLObjectType({
   name: "Project",
@@ -35,6 +25,17 @@ const ProjectType = new GraphQLObjectType({
         return Client.findById(parent.clientId);
       },
     },
+  }),
+});
+
+// Client Type
+const ClientType = new GraphQLObjectType({
+  name: "Client",
+  fields: () => ({
+    id: { type: GraphQLID },
+    name: { type: GraphQLString },
+    email: { type: GraphQLString },
+    phone: { type: GraphQLString },
   }),
 });
 
@@ -70,6 +71,7 @@ const RootQuery = new GraphQLObjectType({
   },
 });
 
+// Mutations
 const mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
