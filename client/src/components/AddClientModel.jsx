@@ -56,7 +56,7 @@ export default function AddClientModal() {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="addClientModalLabel">
-                Add Client
+                Add Company
               </h5>
               <button
                 type="button"

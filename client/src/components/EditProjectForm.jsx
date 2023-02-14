@@ -36,7 +36,7 @@ export default function EditProjectForm({ project }) {
 
   return (
     <div className="mt-5">
-      <h3>Update Project Details</h3>
+      <h3>Update Application Details</h3>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
           <label className="form-label">Name</label>
@@ -66,7 +66,7 @@ export default function EditProjectForm({ project }) {
             onChange={(e) => setStatus(e.target.value)}
           >
             <option value="new">Not Started</option>
-            <option value="progress">In Progress</option>
+            <option value="progress">Application In Progress</option>
             <option value="completed">Completed</option>
           </select>
         </div>

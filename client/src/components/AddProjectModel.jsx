@@ -111,7 +111,7 @@ export default function AddProjectModal() {
                         <option value="progress">
                           Application In Progress
                         </option>
-                        <option value="completed">Waiting For Result</option>
+                        <option value="completed">Completed</option>
                       </select>
                     </div>
 
